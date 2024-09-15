@@ -13,7 +13,7 @@ for (( i=1; i<=N; i++ ))
     do
         read -p "Enter number $i : " num
         total=$((total+num)) # finding total
-done
+    done
 
 # finding the average of all numbers
 avg=$((total/N))
