@@ -4,12 +4,12 @@
 
 read -p "Enter N: " N
 
-count=0
-num=1
+count=1
+num=2
 
 echo "First $N prime numbers are:-"
 
-while [ $count -ne $N ];
+while [ $count -le $N ];
 do
     flag=0
     
@@ -22,14 +22,9 @@ do
     done
 
     if [ $flag -eq 0 ]; then
-        echo "$num"
+        echo "$count.     $num"
         count=$((count+1))
     fi
 
     num=$((num+1))
 done
-
-
-
-
-
